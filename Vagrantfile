@@ -33,5 +33,7 @@ Vagrant.configure(2) do |config|
 	 sudo sed -i '$acomplete -F _docker docker' /etc/bash_completion.d/docker.io
 	 sudo service docker.io restart
 	 sudo docker run hello-world
+	 adduser vagrant
+	 usermod -aG docker vagrant
   SHELL
 end
