@@ -11,8 +11,13 @@ Vagrant.configure(2) do |config|
   config.vm.provision "shell", inline: <<-SHELL
      #General updates
 	 sudo apt-get update
-	 sudo apt-get install python-pip
-     #install redis
+	 sudo apt-get -y install python-pip
+	 sudo apt-get -y install python3-pip
+     
+	 #install node.js
+	 sudo apt-get -y install node
+	 
+	 #install redis
 	 sudo apt-get install build-essential
 	 sudo apt-get install tcl8.5
 	 wget http://download.redis.io/releases/redis-stable.tar.gz
@@ -25,8 +30,12 @@ Vagrant.configure(2) do |config|
 	 sudo ./install_server.sh
 	 cd ..
 	 cd ..
-	 #Install python redis-driver
+	 
+	 #Install redis-driver
 	 sudo pip install redis
+	 sudo pip3 install redis
+	 sudp npm install redis
+	 
 	 #install docker 
 	 sudo apt-get -y install docker.io
 	 sudp ln -sf /usr/bin/docker.io /usr/local/bin/docker
