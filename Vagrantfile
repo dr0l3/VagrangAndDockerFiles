@@ -43,7 +43,7 @@ Vagrant.configure(2) do |config|
 	 
 	 #install docker 
 	 sudo apt-get -y install docker.io
-	 sudp ln -sf /usr/bin/docker.io /usr/local/bin/docker
+	 sudo ln -sf /usr/bin/docker.io /usr/local/bin/docker
 	 sudo sed -i '$acomplete -F _docker docker' /etc/bash_completion.d/docker.io
 	 sudo service docker.io restart
 	 sudo docker run hello-world
