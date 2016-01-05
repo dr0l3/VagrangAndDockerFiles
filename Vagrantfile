@@ -15,7 +15,12 @@ Vagrant.configure(2) do |config|
 	 sudo apt-get -y install python3-pip
      
 	 #install node.js
-	 sudo apt-get -y install node
+	 sudo apt-get -y install nodejs
+	 sudo apt-get -y install npm
+	 
+	 #install npm libraries
+	 sudo npm install highcharts
+	 sudo npm install jquery
 	 
 	 #install redis
 	 sudo apt-get install build-essential
@@ -34,7 +39,7 @@ Vagrant.configure(2) do |config|
 	 #Install redis-driver
 	 sudo pip install redis
 	 sudo pip3 install redis
-	 sudp npm install redis
+	 sudo npm install redis
 	 
 	 #install docker 
 	 sudo apt-get -y install docker.io
