@@ -21,6 +21,7 @@ Vagrant.configure(2) do |config|
 	 #install npm libraries
 	 sudo npm install highcharts
 	 sudo npm install jquery
+	 sudo npm install --no-bin-links express #if vagrant on windows. otherwise probably not needed.
 	 
 	 #install redis
 	 sudo apt-get install build-essential
