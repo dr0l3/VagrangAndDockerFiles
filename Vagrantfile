@@ -15,6 +15,7 @@ Vagrant.configure(2) do |config|
 	 sudo apt-get -y install python3-pip
      
 	 #install node.js
+	 curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash - #for 4.0 version
 	 sudo apt-get -y install nodejs
 	 sudo apt-get -y install npm
 	 
