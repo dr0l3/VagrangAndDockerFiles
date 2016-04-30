@@ -24,6 +24,12 @@ Vagrant.configure(2) do |config|
 	 sudo npm install jquery
 	 sudo npm install --no-bin-links express #if vagrant on windows. otherwise probably not needed.
 	 
+	 #install java 8. Last command doesn't work.
+	 sudo apt-get install -y python-software-properties
+	 sudo add-apt-repository -y ppa:webupd8team/java
+	 sudo apt-get update
+	 sudo apt-get install -y oracle-java8-installer
+	 
 	 #install redis
 	 sudo apt-get install build-essential
 	 sudo apt-get install tcl8.5
